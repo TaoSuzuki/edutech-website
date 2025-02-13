@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech個別指導</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .feature {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            background: white;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EduTech個別指導</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">特徴</a></li>
+                <li><a href="#services">サービス</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>3つの特徴</h2>
+        <div class="feature">
+            <img src="/icons/book_red.svg" alt="個別指導">
+            <h3>完全個別指導</h3>
+            <p>一人ひとりに寄り添い、生成AIを活用した学習サポートを行います。</p>
+        </div>
+        <div class="feature">
+            <img src="/icons/document_yellow.svg" alt="プロジェクト型学習">
+            <h3>プロジェクト型学習</h3>
+            <p>お子さまの興味を基に、目標設定やタスク管理を行いながら学びを深めます。</p>
+        </div>
+        <div class="feature">
+            <img src="/icons/target_blue.svg" alt="デジタルリテラシー">
+            <h3>デジタルリテラシーの育成</h3>
+            <p>生成AIを活用しながら、技術の使い方や倫理的な視点を学びます。</p>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>提供サービス</h2>
+        <p>個別指導、オンライン講座、保護者向けサポートなど多彩なサービスを提供します。</p>
+    </section>
+    
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form>
+            <label for="name">お名前:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">お問い合わせ内容:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">送信</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 EduTech個別指導</p>
+    </footer>
+</body>
+</html>
