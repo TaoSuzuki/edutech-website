@@ -28,3 +28,26 @@ git clone https://github.com/yourusername/edutech-website.git
 ## 作者
 - 名前: Your Name
 - GitHub: [yourusername](https://github.com/yourusername)
+
+## ディレクトリ構成
+```
+/edutech-website
+│── index.html             # トップページ
+│── services.html          # サービス内容ページ
+│── flow.html              # 受講の流れ
+│── about.html             # 運営者紹介
+│── contact.html           # お問い合わせ
+│── assets/                # 静的ファイル（CSS・JS・画像）
+│   ├── css/
+│   │   ├── styles.css     # 共通のスタイル
+│   │   ├── header.css     # ヘッダー用のスタイル
+│   │   ├── footer.css     # フッター用のスタイル
+│   ├── js/
+│   │   ├── script.js      # メインのJavaScript
+│   │   ├── common.js      # ヘッダー・フッターの読み込み
+│   ├── images/            # 画像ファイル
+│── templates/             # 共通パーツのHTML
+│   ├── header.html        # ヘッダー
+│   ├── footer.html        # フッター
+│   ├── nav.html           # ナビゲーション
+```
