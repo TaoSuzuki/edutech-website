@@ -105,9 +105,11 @@ footer {
     margin-bottom: 1rem;
 }
 
+/* チェックマークのスタイル統一 */
 .list-unstyled li {
     position: relative;
     padding-left: 25px;
+    margin-bottom: 0.5rem;
 }
 
 .list-unstyled li:before {
@@ -115,6 +117,20 @@ footer {
     color: var(--primary-color);
     position: absolute;
     left: 0;
+    font-weight: bold;
+}
+
+/* ステップ見出しのスタイル */
+.step-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.step-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 /* レスポンシブ対応 */
@@ -133,5 +149,11 @@ footer {
 
     .step-number {
         margin: 0 auto 20px;
+    }
+
+    .step-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 } 
