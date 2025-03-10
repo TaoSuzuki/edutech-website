@@ -1,53 +1,68 @@
-# Edutech Website
+# 生成AIラボ個別指導 ウェブサイト
 
 ## 概要
-Edutech Websiteは、教育技術に関する情報を提供するウェブサイトです。
+生成AIを活用した個別指導サービスのウェブサイトです。生徒一人一人に合わせた最適な学習プランを提供します。
 
-## プロジェクト構成
-- `index.html` - ホームページ
-- `about.html` - サイトについて
-- `contact.html` - お問い合わせページ
-- `styles/` - CSSファイル
-- `scripts/` - JavaScriptファイル
+## サイト構成
+1. トップページ（index.html）
+   - キャッチコピー：「もっと自由に、もっと楽しく！探究心を育てる学び」
+   - ファーストビュー
+   - サービス概要
+   - CTAボタン
 
-## インストール
-このプロジェクトをローカルにクローンするには、以下のコマンドを使用します:
+2. サービス紹介（services.html）
+   - AI×メンター式指導の詳細
+   - 完全マンツーマン指導の特徴
+   - 柔軟なスケジュール
+   - 対象生徒像
+
+3. 受講の流れ（flow.html）
+   - 申し込みから授業開始までのステップ
+   - 無料体験の流れ
+   - スケジュール調整方法
+
+4. 既存サービスとの違い（comparison.html）
+   - 一般的な教育の課題
+   - 当サービスの特徴
+   - テクノロジー活用の利点
+
+5. 運営者紹介（about.html）
+   - プロフィール
+   - 経歴
+   - 事業への想い
+
+6. お問い合わせ・申し込み（contact.html）
+   - お問い合わせフォーム
+   - 無料体験申し込み
+   - SNSリンク
+
+## 開発者向け情報
+
+### インストール方法
+1. リポジトリをクローン
 ```bash
-git clone https://github.com/yourusername/edutech-website.git
+git clone [repository-url]
 ```
 
-## 使用方法
-プロジェクトディレクトリに移動し、ブラウザで`index.html`を開いてください。
-
-## 貢献
-貢献を歓迎します。プルリクエストを送る前に、問題を立ててください。
-
-## ライセンス
-このプロジェクトはMITライセンスの下でライセンスされています。
-
-## 作者
-- 名前: Your Name
-- GitHub: [yourusername](https://github.com/yourusername)
-
-## ディレクトリ構成
+2. 依存関係のインストール
+```bash
+npm install
 ```
-/edutech-website
-│── index.html             # トップページ
-│── services.html          # サービス内容ページ
-│── flow.html              # 受講の流れ
-│── about.html             # 運営者紹介
-│── contact.html           # お問い合わせ
-│── assets/                # 静的ファイル（CSS・JS・画像）
-│   ├── css/
-│   │   ├── styles.css     # 共通のスタイル
-│   │   ├── header.css     # ヘッダー用のスタイル
-│   │   ├── footer.css     # フッター用のスタイル
-│   ├── js/
-│   │   ├── script.js      # メインのJavaScript
-│   │   ├── common.js      # ヘッダー・フッターの読み込み
-│   ├── images/            # 画像ファイル
-│── templates/             # 共通パーツのHTML
-│   ├── header.html        # ヘッダー
-│   ├── footer.html        # フッター
-│   ├── nav.html           # ナビゲーション
+
+3. 開発サーバーの起動
+```bash
+npm run dev
 ```
+
+### 技術スタック
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+- Google Forms API
+
+### 開発ガイドライン
+- コンポーネントベースの開発
+- レスポンシブデザイン対応
+- アクセシビリティ対応
+- SEO対策

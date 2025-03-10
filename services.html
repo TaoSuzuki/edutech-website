@@ -3,65 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サービス内容 - EduTech個別指導</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>サービス紹介 - 生成AIラボ個別指導</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>EduTech個別指導</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="service.html">サービス内容</a></li>
-                <li><a href="flow.html">受講の流れ</a></li>
-                <li><a href="about.html">運営者紹介</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">生成AIラボ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ホーム</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">サービス紹介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="flow.html">受講の流れ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison.html">既存サービスとの違い</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">運営者紹介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    
-    <section id="service">
-        <h2>サービス内容</h2>
-        <p>EduTech個別指導では、最先端の生成AIを活用した学習方法を提供し、お子さまのデジタルリテラシーを高めながら、個別に最適化された学習体験を実現します。</p>
-        
-        <div class="service-plan">
-            <h3>提供サービス</h3>
-            <ul>
-                <li><strong>AIリテラシー講座:</strong> 生成AIの基本的な使い方を学び、適切に活用するスキルを習得。</li>
-                <li><strong>プロジェクト型学習:</strong> 興味に基づいたプロジェクトを設計し、AIを活用して探求を深める。</li>
-                <li><strong>個別指導プログラム:</strong> 1対1の指導で、それぞれの目的に合わせた学習プランを提供。</li>
-            </ul>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5">サービス紹介</h1>
+
+        <!-- AI×メンター式指導 -->
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>AI×メンター式指導</h2>
+                    <p class="lead">AIを活用し、子どもの興味を正しく導く</p>
+                    <p>生成AIを活用して、お子さまの興味や理解度を分析し、最適な学習プランを提案します。メンターがAIと連携しながら、個別に最適化された指導を提供します。</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ AIによる学習進捗の分析</li>
+                        <li class="mb-2">✓ 個別最適化されたカリキュラム</li>
+                        <li class="mb-2">✓ リアルタイムフィードバック</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/ai-mentor.jpg" alt="AI×メンター式指導" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- 完全マンツーマン -->
+        <section class="mb-5">
+            <div class="row align-items-center flex-md-row-reverse">
+                <div class="col-md-6">
+                    <h2>完全マンツーマン</h2>
+                    <p class="lead">個別指導だからこそ、深く広く学べる</p>
+                    <p>1対1の完全マンツーマン指導で、お子さまのペースに合わせた学習を実現します。質問や疑問点をすぐに解決でき、効率的な学習が可能です。</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ お子さまのペースに合わせた指導</li>
+                        <li class="mb-2">✓ 質問しやすい環境</li>
+                        <li class="mb-2">✓ 深い理解の促進</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/one-on-one.jpg" alt="完全マンツーマン指導" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- 柔軟なスケジュール -->
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>柔軟なスケジュール</h2>
+                    <p class="lead">平日夕方30分単位で受講可能</p>
+                    <p>お子さまの生活リズムに合わせて、柔軟にスケジュールを調整できます。平日夕方の30分単位での受講が可能で、他の習い事との両立も容易です。</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ 30分単位での受講</li>
+                        <li class="mb-2">✓ 平日夕方の時間帯</li>
+                        <li class="mb-2">✓ 柔軟な予約システム</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/schedule.jpg" alt="柔軟なスケジュール" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- 対象生徒 -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">こんなお子さまにおすすめです</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">自分で考える力を育てたい</h3>
+                            <p class="card-text">AIを活用しながら、自ら考え、探究する力を養います</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">テクノロジーに興味がある</h3>
+                            <p class="card-text">最新のAI技術に触れながら、デジタルリテラシーを高めます</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">個別のペースで学びたい</h3>
+                            <p class="card-text">完全マンツーマンで、自分のペースに合わせて学習できます</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 生成AIラボ個別指導. All rights reserved.</p>
         </div>
-        
-        <div class="pricing">
-            <h3>料金プラン</h3>
-            <table>
-                <tr>
-                    <th>プラン</th>
-                    <th>内容</th>
-                    <th>料金</th>
-                </tr>
-                <tr>
-                    <td>ライトプラン</td>
-                    <td>月2回の個別指導＋オンラインサポート</td>
-                    <td>¥5,000/月</td>
-                </tr>
-                <tr>
-                    <td>スタンダードプラン</td>
-                    <td>月4回の個別指導＋専用カリキュラム</td>
-                    <td>¥10,000/月</td>
-                </tr>
-                <tr>
-                    <td>プレミアムプラン</td>
-                    <td>週1回の個別指導＋AIを活用した学習支援</td>
-                    <td>¥15,000/月</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 EduTech個別指導</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

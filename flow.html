@@ -3,45 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>受講の流れ - EduTech個別指導</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>受講の流れ - 生成AIラボ個別指導</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>受講の流れ</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="services.html">サービス内容</a></li>
-                <li><a href="flow.html">受講の流れ</a></li>
-                <li><a href="about.html">運営者紹介</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">生成AIラボ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ホーム</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">サービス紹介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="flow.html">受講の流れ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison.html">既存サービスとの違い</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">運営者紹介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    
-    <section id="flow">
-        <h2>受講の流れ</h2>
-        <div class="step">
-            <h3>1. 無料カウンセリング申し込み</h3>
-            <p>お問い合わせフォームよりお申し込みください。日程を調整します。</p>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5">受講の流れ</h1>
+
+        <!-- ステップ1: 申し込み -->
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="step-number">1</div>
+                    <h2>申し込み</h2>
+                    <p class="lead">お問い合わせフォームから簡単に申し込み</p>
+                    <p>お問い合わせフォームより、お子さまの基本情報とご希望の受講内容をお知らせください。担当者から24時間以内にご連絡いたします。</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ 基本情報の入力</li>
+                        <li class="mb-2">✓ 受講内容の選択</li>
+                        <li class="mb-2">✓ 担当者からの連絡</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/step1.jpg" alt="申し込み" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- ステップ2: 無料体験 -->
+        <section class="mb-5">
+            <div class="row align-items-center flex-md-row-reverse">
+                <div class="col-md-6">
+                    <div class="step-number">2</div>
+                    <h2>無料体験</h2>
+                    <p class="lead">30分の導入セッションで体験</p>
+                    <p>実際のAI×メンター式指導を30分間体験していただきます。お子さまの興味や理解度を確認し、最適な学習プランを提案させていただきます。</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ AIとの対話体験</li>
+                        <li class="mb-2">✓ 学習スタイルの確認</li>
+                        <li class="mb-2">✓ カリキュラムの提案</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/step2.jpg" alt="無料体験" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- ステップ3: スケジュール決定 -->
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="step-number">3</div>
+                    <h2>スケジュール決定</h2>
+                    <p class="lead">個別に最適なスケジュールを調整</p>
+                    <p>お子さまの生活リズムに合わせて、受講スケジュールを調整します。平日夕方の30分単位で、柔軟に予約が可能です。</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ 希望時間の確認</li>
+                        <li class="mb-2">✓ スケジュール調整</li>
+                        <li class="mb-2">✓ 予約システムの案内</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/step3.jpg" alt="スケジュール決定" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- ステップ4: 学習スタート -->
+        <section class="mb-5">
+            <div class="row align-items-center flex-md-row-reverse">
+                <div class="col-md-6">
+                    <div class="step-number">4</div>
+                    <h2>学習スタート</h2>
+                    <p class="lead">AI×メンター式の個別指導開始</p>
+                    <p>AIとメンターが連携しながら、お子さまの興味や理解度に合わせた学習を提供します。定期的な振り返りで、学習効果を確認します。</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ AIによる学習支援</li>
+                        <li class="mb-2">✓ メンターによる指導</li>
+                        <li class="mb-2">✓ 進捗の確認</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/step4.jpg" alt="学習スタート" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- ステップ5: フォローアップ -->
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="step-number">5</div>
+                    <h2>フォローアップ</h2>
+                    <p class="lead">親との振り返りで学習効果を確認</p>
+                    <p>定期的に保護者の方と面談を行い、学習の進捗や効果を確認します。必要に応じてカリキュラムの調整も可能です。</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">✓ 進捗報告</li>
+                        <li class="mb-2">✓ カリキュラム調整</li>
+                        <li class="mb-2">✓ 今後の目標設定</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/step5.jpg" alt="フォローアップ" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 生成AIラボ個別指導. All rights reserved.</p>
         </div>
-        <div class="step">
-            <h3>2. 初回カウンセリング</h3>
-            <p>学習の目的や興味のある分野についてヒアリングし、最適なプランを提案します。</p>
-        </div>
-        <div class="step">
-            <h3>3. 体験セッション</h3>
-            <p>実際にAIを活用した学習を体験し、学習スタイルに合うかを確認できます。</p>
-        </div>
-        <div class="step">
-            <h3>4. 正式申し込み</h3>
-            <p>納得いただけたら正式にお申し込みいただき、学習がスタートします。</p>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 EduTech個別指導</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
