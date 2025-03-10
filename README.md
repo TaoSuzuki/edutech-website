@@ -128,3 +128,15 @@ https://github.com/TaoSuzuki/edutech-web/issues/1 -->
    ```
    - GitHub Actionsで自動的にデプロイされる
    - 数分後に変更が反映される
+
+assets/images/
+├── hero-image.jpg        # トップページのメイン画像（子どもがAIと学ぶイメージ）
+├── ai-mentor.jpg         # AI×メンター式指導の説明画像
+├── one-on-one.jpg        # 完全マンツーマン指導の説明画像
+├── schedule.jpg          # 柔軟なスケジュールの説明画像
+├── profile.jpg           # 運営者紹介のプロフィール画像
+├── step1.jpg            # 受講の流れ：申し込み
+├── step2.jpg            # 受講の流れ：無料体験
+├── step3.jpg            # 受講の流れ：スケジュール決定
+├── step4.jpg            # 受講の流れ：学習スタート
+└── step5.jpg            # 受講の流れ：フォローアップ
