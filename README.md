@@ -70,16 +70,21 @@ npm run dev
 ### GitHub Pagesでの公開方法
 
 1. リポジトリの設定
-   - GitHubリポジトリの「Settings」タブを開く
-   - 左サイドバーの「Pages」を選択
+   - GitHubにログインし、リポジトリページを開く
+   - 上部メニューの「Settings」タブをクリック
+   - 左サイドバーの「Pages」をクリック
    - 「Source」セクションで「Deploy from a branch」を選択
-   - 「Branch」で「main」を選択し、「/(root)」を選択
-   - 「Save」をクリック
+   - 「Branch」ドロップダウンで「main」を選択
+   - 「Folder」ドロップダウンで「/(root)」を選択
+   - 「Save」ボタンをクリック
 
 2. サイトの公開
    - ローカルでの変更をコミット
    ```bash
+   # 変更したファイルをステージング
    git add .
+   
+   # 変更内容をコミット
    git commit -m "Update website content"
    ```
    - リモートリポジトリにプッシュ
@@ -87,20 +92,39 @@ npm run dev
    git push origin main
    ```
    - GitHub Actionsのワークフローが自動的に実行され、サイトがビルド・デプロイされる
+   - デプロイ状況は「Actions」タブで確認可能
    - デプロイ完了後、`https://[username].github.io/[repository-name]` でサイトにアクセス可能
+     - 例：`https://tao.github.io/edutech-web`
 
-3. カスタムドメインの設定（オプション）
-   - リポジトリのルートに `CNAME` ファイルを作成
-   - ドメイン名を記述（例：`www.example.com`）
-   - DNSレコードの設定
-     - タイプ：`CNAME`
-     - ホスト：`www`
-     - 値：`[username].github.io`
-   - GitHub Pagesの設定で「Custom domain」にドメイン名を入力
-   - 「Enforce HTTPS」にチェックを入れる
+<!-- カスタムドメインの設定は現在保留中です。詳細は以下のissueを参照してください：
+https://github.com/TaoSuzuki/edutech-web/issues/1 -->
 
 4. トラブルシューティング
-   - デプロイが失敗した場合は、GitHub Actionsのログを確認
-   - ブランチ名が正しいか確認（`main`または`master`）
-   - ファイルパスが正しいか確認
-   - 必要なファイルがすべてコミットされているか確認
+   - デプロイが失敗した場合
+     - 「Actions」タブでエラーログを確認
+     - ビルドエラーの詳細を確認
+     - 必要なファイルがすべてコミットされているか確認
+   - サイトが表示されない場合
+     - ブランチ名が正しいか確認（`main`または`master`）
+     - ファイルパスが正しいか確認
+     - GitHub Pagesの設定が正しいか確認
+
+5. ローカルでのテスト
+   ```bash
+   # ローカルサーバーを起動
+   python -m http.server 8000
+   
+   # ブラウザで確認
+   open http://localhost:8000
+   ```
+
+6. 更新方法
+   - ローカルでファイルを編集
+   - 変更をコミットしてプッシュ
+   ```bash
+   git add .
+   git commit -m "Update content"
+   git push origin main
+   ```
+   - GitHub Actionsで自動的にデプロイされる
+   - 数分後に変更が反映される
