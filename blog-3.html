@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>グループ学習で伸びる！コミュニケーション力 | 教育ブログ</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#4F46E5", secondary: "#10B981" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- ヘッダー/ナビゲーション -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+      <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center">
+          <h1 class="text-2xl font-['Pacifico'] text-primary">ミラコラグループ</h1>
+          <span class="ml-2 text-lg font-medium">放課後テラコヤ学舎</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="index.html#service" class="text-gray-700 hover:text-primary transition-colors">サービス概要</a>
+          <a href="index.html#philosophy" class="text-gray-700 hover:text-primary transition-colors">教育理念</a>
+          <a href="index.html#price" class="text-gray-700 hover:text-primary transition-colors">料金</a>
+          <a href="index.html#seminar" class="text-gray-700 hover:text-primary transition-colors">説明会・体験会</a>
+          <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors font-bold">ブログ</a>
+          <a href="index.html#contact" class="text-gray-700 hover:text-primary transition-colors">お問い合わせ</a>
+        </nav>
+        <div class="flex items-center space-x-3">
+          <a href="index.html#contact" class="hidden md:flex items-center justify-center bg-white border border-primary text-primary px-4 py-2 rounded-button whitespace-nowrap hover:bg-primary hover:text-white transition-colors">
+            <div class="w-5 h-5 flex items-center justify-center mr-1"><i class="ri-mail-line"></i></div>
+            <span>お問い合わせ</span>
+          </a>
+          <a href="#line" class="flex items-center justify-center bg-[#06C755] text-white px-4 py-2 rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors">
+            <div class="w-5 h-5 flex items-center justify-center mr-1"><i class="ri-line-fill"></i></div>
+            <span>LINE</span>
+          </a>
+          <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" id="menuToggle"><i class="ri-menu-line text-2xl"></i></button>
+        </div>
+      </div>
+      <!-- モバイルメニュー -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white w-full border-t">
+        <div class="container mx-auto px-4 py-2">
+          <nav class="flex flex-col space-y-3 py-3">
+            <a href="index.html#service" class="text-gray-700 hover:text-primary transition-colors py-2">サービス概要</a>
+            <a href="index.html#philosophy" class="text-gray-700 hover:text-primary transition-colors py-2">教育理念</a>
+            <a href="index.html#price" class="text-gray-700 hover:text-primary transition-colors py-2">料金</a>
+            <a href="index.html#seminar" class="text-gray-700 hover:text-primary transition-colors py-2">説明会・体験会</a>
+            <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors py-2 font-bold">ブログ</a>
+            <a href="index.html#contact" class="text-gray-700 hover:text-primary transition-colors py-2">お問い合わせ</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="py-32 min-h-screen">
+      <div class="container mx-auto px-4 max-w-3xl">
+        <div class="mb-8">
+          <a href="blog.html" class="text-primary hover:underline">← ブログ一覧へ戻る</a>
+        </div>
+        <h2 class="text-3xl font-bold mb-4">グループ学習で伸びる！コミュニケーション力</h2>
+        <div class="flex items-center mb-6">
+          <img src="https://readdy.ai/api/search-image?query=Professional%20female%20teacher%20portrait%2C%20warm%20smile%2C%20business%20casual%2C%20neutral%20background&width=100&height=100&seq=4&orientation=squarish" alt="鈴木タオ" class="w-10 h-10 rounded-full mr-3" />
+          <span class="text-sm text-gray-600">鈴木タオ</span>
+          <span class="text-sm text-gray-500 ml-4">2025.06.20</span>
+        </div>
+        <img src="https://readdy.ai/api/search-image?query=Students%20engaged%20in%20group%20discussion%2C%20collaborative%20learning%2C%20modern%20classroom%20setting%2C%20active%20learning%20environment&width=600&height=400&seq=6&orientation=landscape" alt="グループ学習" class="w-full h-64 object-cover object-top rounded-lg mb-8" />
+        <div class="prose max-w-none">
+          <p>一人で学ぶだけでなく、仲間と一緒に学ぶことで新しい視点や考え方に出会えます。効果的なグループ学習の方法と、その教育効果について解説します。</p>
+          <h3>グループ学習のメリット</h3>
+          <p>・他の人の意見を聞くことで、自分にはなかった考え方を知ることができます。
+・自分の考えを言葉にすることで、理解が深まります。
+・協力して課題を解決する力が身につきます。</p>
+          <h3>効果的なグループワークのコツ</h3>
+          <p>・相手の話をよく聞くこと
+・自分の意見も積極的に伝えること
+・みんなで協力して目標を決めること</p>
+          <h3>まとめ</h3>
+          <p>グループ学習は、コミュニケーション力や協調性を育てる絶好の機会です。ぜひ、仲間と一緒に学ぶ楽しさを体験してみてください！</p>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-2xl font-['Pacifico']">ミラコラグループ</h2>
+            <p class="text-gray-400">放課後テラコヤ学舎</p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition-colors"><div class="w-5 h-5 flex items-center justify-center"><i class="ri-twitter-x-line"></i></div></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition-colors"><div class="w-5 h-5 flex items-center justify-center"><i class="ri-instagram-line"></i></div></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition-colors"><div class="w-5 h-5 flex items-center justify-center"><i class="ri-facebook-line"></i></div></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-[#06C755] transition-colors"><div class="w-5 h-5 flex items-center justify-center"><i class="ri-line-fill"></i></div></a>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h3 class="text-lg font-bold mb-4">住所</h3>
+            <p class="text-gray-400">〒480-1152<br />愛知県長久手市氏神前304-1</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">営業時間</h3>
+            <p class="text-gray-400">平日：16:00〜19:00<br />土日祝：休み</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">お問い合わせ</h3>
+            <p class="text-gray-400">メール：info@terakoya.example.com<br />LINE：@terakoya</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 ミラコラグループ 放課後テラコヤ学舎 All Rights Reserved.</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#" class="text-gray-400 hover:text-white text-sm">プライバシーポリシー</a>
+            <a href="#" class="text-gray-400 hover:text-white text-sm">特定商取引法に基づく表記</a>
+            <a href="#" class="text-gray-400 hover:text-white text-sm">サイトマップ</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="mobileMenuToggle">
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        menuToggle.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+          // アイコンの切り替え
+          const icon = menuToggle.querySelector("i");
+          if (mobileMenu.classList.contains("hidden")) {
+            icon.classList.remove("ri-close-line");
+            icon.classList.add("ri-menu-line");
+          } else {
+            icon.classList.remove("ri-menu-line");
+            icon.classList.add("ri-close-line");
+          }
+        });
+        // モバイルメニューのリンクをクリックしたらメニューを閉じる
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        mobileMenuLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+            const icon = menuToggle.querySelector("i");
+            icon.classList.remove("ri-close-line");
+            icon.classList.add("ri-menu-line");
+          });
+        });
+      });
+    </script>
+    <script id="smoothScroll">
+      document.addEventListener("DOMContentLoaded", function () {
+        // スムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              const headerHeight = 80; // ヘッダーの高さ
+              const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+              window.scrollTo({ top: targetPosition, behavior: "smooth" });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
